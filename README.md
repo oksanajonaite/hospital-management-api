@@ -27,7 +27,7 @@ A Spring Boot REST API for hospital patient management with role-based access co
 ## Getting Started
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hospital.git
+git clone https://github.com/oksanajonaite/hospital.git
 cd hospital
 ./mvnw spring-boot:run
 ```
