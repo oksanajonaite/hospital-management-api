@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: hospital
+  datasource:
+    url: jdbc:h2:mem:hospital
+    driver-class-name: org.h2.Driver
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+
+server:
+  port: 8080
